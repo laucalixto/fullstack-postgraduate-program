@@ -17,8 +17,8 @@ Este repositório contém os projetos e trabalhos desenvolvidos durante a minha 
 
 * Descrição: Introdução aos conceitos básicos de HTML, CSS e JavaScript.
 * Projetos:
-    * [Exemplos básicos](modulo-fundamentos-da-computacao-e-algoritmos/exemplosbasicos/)
-    * [Mini Browser](modulo-fundamentos-da-computacao-e-algoritmos/minibrowser/)
+    * [Exemplos básicos](modulo-2-fundamentos-da-computacao-e-algoritmos/exemplosbasicos/)
+    * [Mini Browser](modulo-2-fundamentos-da-computacao-e-algoritmos/minibrowser/)
 
 ## Projeto Final
 
