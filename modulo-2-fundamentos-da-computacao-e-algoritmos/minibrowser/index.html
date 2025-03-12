@@ -12,13 +12,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mini Browser</title>
-        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="stylesheet" href="style.css" /> -->
     </head>
     <body>
         <script>
             var aba1 = {
                 titulo: 'Título aba 1',
-                url: 'https://gemini.google.com/',
+                url: 'https://www.w3schools.com/',
             };
 
             var aba2 = {
@@ -30,7 +30,7 @@
 
             for (aba of abas) {
                 var valorAtual = document.body.innerHTML;
-                document.body.innerHTML = valorAtual + `<div><a href="${aba.url}">${aba.titulo}</a><hr></div>`;
+                document.body.innerHTML = valorAtual + ` <li><a href="${aba.url}">${aba.titulo}</a><hr></li>`;
             }
         </script>
     </body>

@@ -1,0 +1,46 @@
+<script>
+    console.log('Fila/Queue');
+    //First In, First Out - FIFO
+    var fila = ['script.js', 'style.css', 'imagem.png'];
+    //console.log(fila);
+    //inserir elemento no final da fila
+    fila.push('doguinho.jpg');
+    //console.log(fila);
+    //remove o primeiro elemento da fila
+    fila.shift();
+    //console.log(fila);
+
+    //=========================
+    // RECEITA PARA CRIAR FILAS
+    //=========================
+
+    //--enqueue
+    //--dequeue
+
+    class Queue {
+        constructor() {
+            this.data = [];
+        }
+
+        enqueue(element) {
+            this.data.push(element);
+        }
+
+        dequeue() {
+            this.data.shift();
+        }
+
+        print() {
+            console.log(this.data);
+        }
+    }
+
+    var requests = new Queue();
+    requests.print();
+    requests.enqueue('scripts.js');
+    requests.dequeue();
+    requests.enqueue('style.css');
+    requests.enqueue('imagem.png');
+    requests.enqueue('doguinho.png');
+    requests.print();
+</script>
