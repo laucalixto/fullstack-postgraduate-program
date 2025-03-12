@@ -22,6 +22,7 @@ Este repositório contém os projetos e trabalhos desenvolvidos durante a minha 
     -   [Fila](modulo-2-fundamentos-da-computacao-e-algoritmos/fila/)
     -   [Pilha](modulo-2-fundamentos-da-computacao-e-algoritmos/fila/)
     -   [Map](modulo-2-fundamentos-da-computacao-e-algoritmos/map/)
+    -   [Set](modulo-2-fundamentos-da-computacao-e-algoritmos/set/)
 
 ## Projeto Final
 
