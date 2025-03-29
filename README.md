@@ -11,7 +11,7 @@ Este repositório contém os projetos e trabalhos desenvolvidos durante a minha 
 ## Módulo 1: Projeto em Desenvolvimento de Aplicação Web - Parte 1
 
 -   Descrição: Aborda o desenvolvimento de aplicações web, com foco na construção de uma solução mínima para um problema ou serviço ou a criação de um memorial
--   Projetos:
+-   Projetos: Exemplos
 
 ## Módulo 2: Fundamentos da Computação e Algoritmos
 
