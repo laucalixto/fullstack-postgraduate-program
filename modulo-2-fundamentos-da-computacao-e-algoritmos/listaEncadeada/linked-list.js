@@ -6,7 +6,7 @@ export default class LinkedList {
 
     constructor(equalsFn = defaultEquals) {
         this.count = 0;
-        this.#head = null;
+        this.setHead(null);
         this.equalsFn = equalsFn;
     }
 
@@ -14,7 +14,7 @@ export default class LinkedList {
         const node = new Node(element);
         let current;
         if (this.#head == null) {
-            this.#head = node;
+            this.setHead(node);
         } else {
             current = this.#head;
             while (current.next != null) {
@@ -29,7 +29,7 @@ export default class LinkedList {
         if (index >= 0 && index < this.count) {
             let current = this.#head;
             if (index === 0) {
-                this.#head = current.next; //(options => this.#head = this.#head.next || current = current.next)
+                this.setHead(current.next); //(options => this.#head = this.#head.next || current = current.next)
             } else {
                 //Initial option
                 // let previous;
@@ -67,7 +67,7 @@ export default class LinkedList {
             if (index === 0) {
                 const current = this.#head;
                 node.next = current;
-                this.#head = node;
+                this.setHead(node);
             } else {
                 const previous = this.getElementAt(index - 1);
                 const current = previous.next;
@@ -107,6 +107,10 @@ export default class LinkedList {
         return this.#head;
     }
 
+    setHead(node) {
+        this.#head = node;
+    }
+
     toString() {
         if (this.isEmpty()) {
             return '';
@@ -119,10 +123,6 @@ export default class LinkedList {
         }
         return objString;
     }
-
-    display() {
-        console.log(this.toString());
-    }
 }
 
 const list = new LinkedList();
@@ -134,7 +134,7 @@ list.push(7);
 list.insert(50, 1);
 list.insert(123, 0);
 
-console.log('The list:', list.display());
+console.log('The list:', list.toString());
 
 console.log('Element 50 pos:', list.indexOf(50));
 console.log('Element 2 pos:', list.indexOf(2));
@@ -144,4 +144,4 @@ console.log('The list is empty:', list.isEmpty());
 console.log('Size of list:', list.size());
 console.log('The head is:', list.getHead().element);
 
-console.log('The list:', list.display());
+console.log('The list:', list.toString());
