@@ -13,10 +13,10 @@ export default class LinkedList {
     push(element) {
         const node = new Node(element);
         let current;
-        if (this.#head == null) {
+        if (this.getHead() == null) {
             this.setHead(node);
         } else {
-            current = this.#head;
+            current = this.getHead();
             while (current.next != null) {
                 current = current.next;
             }
@@ -27,9 +27,9 @@ export default class LinkedList {
 
     removeAt(index) {
         if (index >= 0 && index < this.count) {
-            let current = this.#head;
+            let current = this.getHead();
             if (index === 0) {
-                this.setHead(current.next); //(options => this.#head = this.#head.next || current = current.next)
+                this.setHead(current.next); //(options => this.getHead() = this.getHead().next || current = current.next)
             } else {
                 //Initial option
                 // let previous;
@@ -52,7 +52,7 @@ export default class LinkedList {
 
     getElementAt(index) {
         if (index >= 0 && index <= this.count) {
-            let node = this.#head;
+            let node = this.getHead();
             for (let i = 0; i < index && node != null; i++) {
                 node = node.next;
             }
@@ -65,7 +65,7 @@ export default class LinkedList {
         if (index >= 0 && index <= this.count) {
             const node = new Node(element);
             if (index === 0) {
-                const current = this.#head;
+                const current = this.getHead();
                 node.next = current;
                 this.setHead(node);
             } else {
@@ -81,7 +81,7 @@ export default class LinkedList {
     }
 
     indexOf(element) {
-        let current = this.#head;
+        let current = this.getHead();
         for (let i = 0; this.count && current != null; i++) {
             if (this.equalsFn(element, current.element)) {
                 return i;
@@ -115,8 +115,8 @@ export default class LinkedList {
         if (this.isEmpty()) {
             return '';
         }
-        let objString = `${this.#head.element}`;
-        let current = this.#head.next;
+        let objString = `${this.getHead().element}`;
+        let current = this.getHead().next;
         for (let i = 1; i < this.size() && current != null; i++) {
             objString = `${objString}, ${current.element}`;
             current = current.next;
