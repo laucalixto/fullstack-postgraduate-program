@@ -111,6 +111,11 @@ export default class LinkedList {
         this.#head = node;
     }
 
+    clear() {
+        this.setHead(null);
+        this.count = 0;
+    }
+
     toString() {
         if (this.isEmpty()) {
             return '';
