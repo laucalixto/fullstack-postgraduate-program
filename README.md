@@ -27,6 +27,7 @@ Este repositório contém os projetos e trabalhos desenvolvidos durante a minha 
     -   [Lista Duplamente Encadeada](modulo-2-fundamentos-da-computacao-e-algoritmos/listaEncadeada/)
     -   [Lista Encadeada Circular](modulo-2-fundamentos-da-computacao-e-algoritmos/listaEncadeada/)
     -   [Lista Encadeada Ordenada](modulo-2-fundamentos-da-computacao-e-algoritmos/listaEncadeada/)
+    -   [Pilha com Lista Encadeada Ordenada](modulo-2-fundamentos-da-computacao-e-algoritmos/listaEncadeada/)
 
 ## Projeto Final
 
