@@ -141,33 +141,51 @@ export default class BinarySearchTree {
             return node;
         }
     }
+    lenghtTree() {
+        if (this.root == null) {
+            return 0;
+        }
+        return this.#countNodes(this.root);
+    }
+
+    #countNodes(node) {
+        if (node != null) {
+            return 1 + this.#countNodes(node.left) + this.#countNodes(node.right);
+        }
+        return 0;
+    }
 }
 
-const printNode = (value) => console.log(value);
-const tree = new BinarySearchTree();
-tree.insert(11);
-tree.insert(7);
-tree.insert(15);
-tree.insert(5);
-tree.insert(3);
-tree.insert(9);
-tree.insert(8);
-tree.insert(10);
-tree.insert(13);
-tree.insert(12);
-tree.insert(14);
-tree.insert(20);
-tree.insert(18);
-tree.insert(25);
-tree.insert(6);
-tree.postOrderTraverse(printNode);
-console.log('*********');
+// const printNode = (value) => console.log(value);
+// const tree = new BinarySearchTree();
 
-tree.remove(11);
-tree.postOrderTraverse(printNode);
-console.log(tree.min().key);
-console.log(tree.max().key);
-const elements = [6, 8];
-console.log(tree.search(elements[0]) ? `Key ${elements[0]} found.` : `Key ${elements[0]} not found.`);
-console.log(tree.search(elements[1]) ? `Key ${elements[1]} found.` : `Key ${elements[1]} not found.`);
-console.log(tree.root.key);
+// tree.insert(11);
+// tree.insert(7);
+// tree.insert(15);
+// tree.insert(5);
+// tree.insert(3);
+// tree.insert(9);
+// tree.insert(8);
+// tree.insert(10);
+// tree.insert(13);
+// tree.insert(12);
+// tree.insert(14);
+// tree.insert(20);
+// tree.insert(18);
+// tree.insert(25);
+// tree.insert(6);
+// tree.inOrderTraverse(printNode);
+// console.log('*********');
+// // console.log(tree.lenghtTree());
+// tree.preOrderTraverse(printNode);
+// console.log('*********');
+// tree.postOrderTraverse(printNode);
+// console.log('*********');
+
+// tree.remove(11);
+// tree.postOrderTraverse(printNode);
+// console.log(tree.min());
+// console.log(tree.max());
+// const elements = [6, 8];
+// console.log(tree.search(elements[0]) ? `Key ${elements[0]} found.` : `Key ${elements[0]} not found.`);
+// console.log(tree.search(elements[1]) ? `Key ${elements[1]} found.` : `Key ${elements[1]} not found.`);
