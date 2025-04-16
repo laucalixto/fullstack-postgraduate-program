@@ -29,6 +29,9 @@ Este repositório contém os projetos e trabalhos desenvolvidos durante a minha 
         -   [Lista Encadeada Ordenada](modulo-2-fundamentos-da-computacao-e-algoritmos/listaEncadeada/)
         -   [Pilha com Lista Encadeada Ordenada](modulo-2-fundamentos-da-computacao-e-algoritmos/listaEncadeada/)
     -   [Árvore](modulo-2-fundamentos-da-computacao-e-algoritmos/arvore/)
+        -   [BST](modulo-2-fundamentos-da-computacao-e-algoritmos/arvore/)
+        -   [AVL](modulo-2-fundamentos-da-computacao-e-algoritmos/arvore/)
+        -   [RED BLACK Tree](modulo-2-fundamentos-da-computacao-e-algoritmos/arvore/)
 
 ## Projeto Final
 

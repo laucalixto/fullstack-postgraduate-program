@@ -3,6 +3,11 @@ export const Compare = {
     BIGGER_THAN: 1,
 };
 
+export const Colors = {
+    RED: 'RED',
+    BLACK: 'BLACK',
+};
+
 export function defaultEquals(a, b) {
     return a === b;
 }
