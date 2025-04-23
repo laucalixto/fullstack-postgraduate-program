@@ -32,6 +32,7 @@ Este repositório contém os projetos e trabalhos desenvolvidos durante a minha 
         -   [BST](modulo-2-fundamentos-da-computacao-e-algoritmos/arvore/)
         -   [AVL](modulo-2-fundamentos-da-computacao-e-algoritmos/arvore/)
         -   [RED BLACK Tree](modulo-2-fundamentos-da-computacao-e-algoritmos/arvore/)
+    -   [Algoritmos de ordenação](modulo-2-fundamentos-da-computacao-e-algoritmos/algoritmosOrdenacao/)
 
 ## Projeto Final
 

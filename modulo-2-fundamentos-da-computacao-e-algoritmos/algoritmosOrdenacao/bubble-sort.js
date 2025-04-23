@@ -1,17 +1,29 @@
-export default function bubbleSort(arr) {
-    const n = arr.length;
+import { defaultCompare, Compare } from './utilities/util.js';
+
+export default function bubbleSort(array, compareFn = defaultCompare) {
+    const { length } = array;
     let swapped;
-    do {
-        swapped = false;
-        for (let i = 0; i < n - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                // Troca os elementos
-                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
-                swapped = true;
+    for (let i = 0; i < length; i++) {
+        swapped = false; // Reseta a flag de troca para cada passagem
+        for (let j = 0; j < length - 1 - i; j++) {
+            if (compareFn(array[j], array[j + 1]) === Compare.BIGGER_THAN) {
+                swap(array, j, j + 1);
+                swapped = true; // Indica que ocorreu uma troca nesta passagem
             }
         }
-    } while (swapped);
-    return arr;
+        // Se nenhuma troca ocorreu nesta passagem, o array está ordenado
+        if (!swapped) {
+            break;
+        }
+    }
+    return array;
+}
+
+function swap(array, a, b) {
+    /* const temp = array[a];
+    array[a] = array[b];
+    array[b] = temp; */ // modo clássico, tipicamente semelhante a outras linguagens
+    [array[a], array[b]] = [array[b], array[a]]; // modo ES2015
 }
 
 // Exemplo de uso:
