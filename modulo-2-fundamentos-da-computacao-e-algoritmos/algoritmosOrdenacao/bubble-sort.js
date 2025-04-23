@@ -1,4 +1,4 @@
-import { defaultCompare, Compare } from './utilities/util.js';
+import { defaultCompare, Compare, swap } from './utilities/util.js';
 
 export default function bubbleSort(array, compareFn = defaultCompare) {
     const { length } = array;
@@ -17,13 +17,6 @@ export default function bubbleSort(array, compareFn = defaultCompare) {
         }
     }
     return array;
-}
-
-function swap(array, a, b) {
-    /* const temp = array[a];
-    array[a] = array[b];
-    array[b] = temp; */ // modo clássico, tipicamente semelhante a outras linguagens
-    [array[a], array[b]] = [array[b], array[a]]; // modo ES2015
 }
 
 // Exemplo de uso:
