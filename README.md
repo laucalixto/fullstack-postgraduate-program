@@ -34,6 +34,20 @@ Este repositório contém os projetos e trabalhos desenvolvidos durante a minha 
         -   [RED BLACK Tree](modulo-2-fundamentos-da-computacao-e-algoritmos/arvore/)
     -   [Algoritmos de ordenação](modulo-2-fundamentos-da-computacao-e-algoritmos/algoritmosOrdenacao/)
 
+## Módulo 3: Programação orientada a objetos
+
+-   Descrição: Introdução ao paradigma orientado a objetos em JavaScript, cobrindo conceitos fundamentais e exemplos práticos.
+-   Projetos:
+    -   [Exemplos básicos](modulo-3-programacao-orientada-objetos/exemplosbasicos/)
+        -   [Variáveis e Constantes (var, let, const)](modulo-3-programacao-orientada-objetos/exemplosbasicos/01-variebles-consts/)
+        -   [Arrays (length, loops)](modulo-3-programacao-orientada-objetos/exemplosbasicos/02-arrays/)
+        -   [Funções (parâmetros, retorno, callbacks, closures, arrow functions)](modulo-3-programacao-orientada-objetos/exemplosbasicos/03-functions/)
+        -   [High-Order Functions (some, every, filter, forEach, reduce, map)](modulo-3-programacao-orientada-objetos/exemplosbasicos/04-high-order-functions/)
+        -   [Classes (modularização CommonJS/ES6, herança, desestruturação)](modulo-3-programacao-orientada-objetos/exemplosbasicos/05-classes/)
+        -   [JSON (stringify, parse)](modulo-3-programacao-orientada-objetos/exemplosbasicos/06-JSON/)
+        -   [Tratamento de Exceções (try...catch, erros personalizados)](modulo-3-programacao-orientada-objetos/exemplosbasicos/07-exception/)
+        -   [Programação Assíncrona (callbacks, Promises, async/await)](modulo-3-programacao-orientada-objetos/exemplosbasicos/08-async/)
+
 ## Projeto Final
 
 -   Descrição: Projeto integrador que abrange todas as disciplinas da pós-graduação.
